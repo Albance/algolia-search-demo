@@ -1,49 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="theme-color" content="#000000" />
+<head>
+  <meta charset="UTF-8">
+  <title>Product Search Demo</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@8.5.1/themes/satellite-min.css">
+</head>
+<body>
+  <h1>Search Products</h1>
 
-    <link rel="shortcut icon" href="./favicon.png" />
+  <div id="searchbox"></div>
+  <div id="facets">
+    <div id="brand-list"></div>
+    <div id="category-list"></div>
+  </div>
+  <div id="hits"></div>
 
-    <link rel="stylesheet" href="./src/index.css" />
-    <link rel="stylesheet" href="./src/app.css" />
-
-    <title>InstantSearch.js — Getting started</title>
-  </head>
-
-  <body>
-    <header class="header">
-      <h1 class="header-title">
-        <a href="/">Getting started</a>
-      </h1>
-      <p class="header-subtitle">
-        using
-        <a href="https://github.com/algolia/instantsearch">
-          InstantSearch.js
-        </a>
-      </p>
-    </header>
-
-    <div class="container">
-      <div class="search-panel">
-        <div class="search-panel__filters">
-          <div id="brand-list"></div>
-        </div>
-
-        <div class="search-panel__results">
-          <div id="searchbox"></div>
-          <div id="hits"></div>
-          <div id="pagination"></div>
-          <div id="trending"></div>
-        </div>
-      </div>
-    </div>
-
-    <script type="module" src="./src/app.js"></script>
-  </body>
+  <!--Correct loading order -->
+  <script src="https://cdn.jsdelivr.net/npm/algoliasearch-lite@4.17.0/dist/algoliasearch-lite.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.59.1/dist/instantsearch.production.min.js"></script>
+  <script src="script.js?v=5"></script>
+</body>
 </html>
